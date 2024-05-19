@@ -30,6 +30,7 @@ public class Counter : MonoBehaviour
         {
             _number++;
             _textMeshPro.text = _number.ToString();
+
             yield return new WaitForSeconds(_timeForIncrease);
         }
     }
